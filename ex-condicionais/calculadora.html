@@ -1,31 +1,46 @@
 <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
 
 <script>
-/* Crie um algoritmo que receba dois números
-   e um dos símbolos abaixo para realizar uma
-   operação matemática.
-
-   +
-   -
-   *
-   /
-
-   Calcule e mostre o resultado.
- */
-
-var n1 = Number(prompt("Digite um número"));
-var n2 = Number(prompt("Digite um número"));
-var operacao = prompt("Qual Operação deseja: \n Soma: + \n Subtração: - \n Multiplicação: * \n Divisão: /");
-var resultado;
-
-switch(operacao) {
-    case '+':
-        resultado = n1 + n2;
-        document.write("Resultado: " + resultado);
-        break;
+    /* Crie um algoritmo que receba dois números
+       e um dos símbolos abaixo para realizar uma
+       operação matemática.
     
+       +
+       -
+       *
+       /
+    
+       Calcule e mostre o resultado.
+     */
+
+    var n1 = Number(prompt("Digite um número"));
+    var n2 = Number(prompt("Digite um número"));
+    var operacao = prompt("Qual Operação deseja: \n Soma: + \n Subtração: - \n Multiplicação: * \n Divisão: /");
+    var resultado;
+
+    switch (operacao) {
+        case '+':
+            resultado = n1 + n2;
+            document.write("Resultado: " + resultado);
+            break;
+
+        case '-':
+            resultado = n1 - n2;
+            document.write("Resultado: " + resultado);
+            break;
+
+        case '*':
+            resultado = n1 * n2;
+            document.write("Resultado: " + resultado);
+            break;
+
+        case '/':
+            resultado = n1 / n2;
+            document.write("Resultado: " + resultado);
+            break;
+
         default:
             document.write("Opçao Inválida");
             break;
-}
+    }
 </script>
