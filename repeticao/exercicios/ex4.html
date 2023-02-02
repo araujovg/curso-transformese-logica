@@ -1,0 +1,18 @@
+<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+
+<script>
+    /* 
+    Leia o nome e um número de vezes que quer que seja escrito o nome e escreva o nome dele na tela esse número de 
+    vezes. 
+    */
+
+    var nome = prompt("Digite seu nome");
+    var numeroVezes = Number.parseInt(prompt("Quantas vezes deseja repetir seu nome?"));
+    var i = 0;
+
+    while(i < numeroVezes) {
+        document.write("Nome: " + nome + " Vez: " + (i+1) + "<br>");
+        i++;
+    }
+
+</script>

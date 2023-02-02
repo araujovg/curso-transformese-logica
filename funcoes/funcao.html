@@ -1,0 +1,36 @@
+<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+
+<script>
+    /* Escreva um algoritmo que leia o nome, data de nascimento e o 
+    salário de um funcionário e em seguida escreva esses dados na tela
+    cada um em uma linha. */
+
+    var nome = prompt("Digite seu nome: ");
+    var dataNascimento = prompt("Digite a data do seu nascimento: ");
+    var salario = Number(prompt("Digite seu salário: "));
+    var sexo = prompt("Digite seu sexo. F para Feminino e M para masculino");
+
+    document.write("Nome: " + nome);
+    pulaLinha();
+    document.write("Data de nascimento: " + dataNascimento);
+    pulaLinha();
+    document.write("Salário: " + verificaSexoCalculaAumento(sexo, salario));
+
+
+    function pulaLinha() {
+        document.write("<br>");
+        document.write("<br>");
+    }
+
+    function verificaSexoCalculaAumento(sexoFuncionario, salarioFuncionario) {
+        if (sexoFuncionario == "F") {
+            salarioFuncionario = salarioFuncionario + (salarioFuncionario * (10 / 100));
+            return salarioFuncionario.toLocaleString("pt-BR", { style: 'currency', currency: "BRL" })
+        }
+        else {
+            salarioFuncionario = salarioFuncionario + (salarioFuncionario * (8 / 100));
+            return salarioFuncionario.toLocaleString("pt-BR", { style: 'currency', currency: "BRL" })
+        }
+    }
+
+</script>

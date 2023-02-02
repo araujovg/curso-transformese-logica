@@ -1,0 +1,29 @@
+<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+
+<script>
+    var velocidade = Number.parseFloat(prompt("Digite a sua velocidade"));
+
+    calculaMulta(verificaVelocidade(velocidade), velocidade);
+
+    function verificaVelocidade(velocidadeDoVeiculo) {
+        if (velocidadeDoVeiculo > 80.0) {
+            document.write("Você foi multado.");
+            document.write("<hr>");
+            return true;
+        }
+        else return false;
+    }
+
+    function calculaMulta(foiMultado, velocidadeDoVeiculo) {
+        if(foiMultado) {
+            var valorMulta = (velocidadeDoVeiculo - 80.0) * 5.0;
+            document.write("Sua velocidade: " + velocidadeDoVeiculo + "KM/H");
+            document.write("<hr>");
+
+            document.write("Sua multa foi de: " + valorMulta.toLocaleString('pt-BR', { style: 'currency', currency: 'BRL' }));
+        }
+        else {
+            alert("Não foi multado. Nada a calcular!");
+        }
+    }
+</script>
