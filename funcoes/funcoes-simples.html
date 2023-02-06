@@ -2,17 +2,85 @@
 
 <script>
 
-    var numero = Number(prompt("Digite um número"));
+var trocaLencol = confirm("Precisar trocar lençol?");
+arrumarCama(trocaLencol);
 
-    document.write("Você digitou: " + numero + " o quadrado desse número é: " + aoCubo(numero));
+var qtdCafe = Number(prompt("Quantas colheres de café?"));
+var tipoDeCoador = prompt("Qual tipo de coador?");
+
+fazerCafe(qtdCafe, tipoDeCoador);
+
+var vetor = ["Gabriel", "Jessica", "David", "Julia"];
 
 
-    function aoQuadrado(valor) {
-        return valor * valor;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+function fazerCafe(qtdPoCafe, tipoCoador) {
+    document.write("Pegar o pó de café");
+    pulaLinha()
+    document.write("Colocar água pra esquentar");
+    pulaLinha();
+    document.write("Lavar a garrafa");
+    pulaLinha();
+    document.write("Posicionar o coador no funil");
+    pulaLinha();
+
+    if(tipoCoador == "papel") {
+        document.write("Jogar um pouquinho de água quente no papel e jogar essa água fora");
+        pulaLinha();
     }
     
-    function aoCubo(valor) {
-        return valor * valor * valor;
+    document.write("Colocar " + qtdPoCafe + " colheres de café na água");
+    pulaLinha();
+    document.write("Coar o café LENTAMENTE");
+    pulaLinha();
+    desenharUmaLinha();
+    
+}
+
+function arrumarCama(precisaTrocarLencol) {
+    if(precisaTrocarLencol) {
+        document.write("Troca o lençol");
+        pulaLinha();
     }
+    document.write("Estica o lençol");
+    pulaLinha();
+    document.write("Dobra os edredons");
+    pulaLinha();
+    document.write("Arruma os travesseiros");
+    pulaLinha();
+    document.write("Estica o cobre-leito");
+    desenharUmaLinha()
+}
+
+function pulaLinha(){
+    document.write("<br>");
+    document.write("<br>");
+}
+
+function desenharUmaLinha(){
+    document.write("<hr>");
+}
 
 </script>
+
+
+

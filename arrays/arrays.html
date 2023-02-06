@@ -1,0 +1,30 @@
+<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+
+<script>
+
+    /* 
+        Faça um algoritmo que leia e ARMAZENE o nome de 10 alunos.
+    */
+
+    /* var nomes = new Array(10);
+    
+    for(let i = 0; i < nomes.length; i++){
+        nomes[i] = prompt("Digite o nome: " + i);
+    }
+
+    nomes.push("José"); 
+
+    for(let i = 0; i < nomes.length; i++) {
+        document.write(nomes[i] + "<br>");
+    }
+
+    nomes.forEach( elem => document.write(elem + "<br>") ); */
+
+    var listaDeFrutas = ['Maçãs','Uvas','Bananas','Abacaxi','Morangos', "Maracujá", "Laranjas", "Manga"];
+    listaDeFrutas.sort();
+    listaDeFrutas.shift();
+    listaDeFrutas.pop();
+
+    listaDeFrutas.forEach( elem => document.write(elem + "<br>") );
+
+</script>

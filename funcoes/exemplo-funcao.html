@@ -21,9 +21,16 @@
     //Refatorar a função abaixo para que ela receba um valor inteiro
     //E utilizando estruturas de repetição quebra a quantidade de linhas que foi solicitada
     function pulaLinha(qtdLinhas){
-        for(let i = 0; i < qtdLinhas; i++){
+        for(let i = 0; i < 10; ){
             document.write("<br>");
         }
+
+        let i = 0;
+        while(i < qtdLinhas) {
+            document.write("<br>");
+            i = i + 1;
+        }
+
     }
 
     function verificaSexoCalculaAumento(sexoFuncionario, salarioFuncionario) {
