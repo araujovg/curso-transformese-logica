@@ -1,0 +1,33 @@
+<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+
+<script>
+    /* 
+
+    Faça uma função que recebe a idade de uma pessoa em anos ou 
+    meses  e retorna essa idade expressa em dias.
+
+    */
+   
+    let idadeAnos = Number(prompt("Digite uma idade em anos: "));
+    let idadeMeses = Number(prompt("Digite uma idade em meses: "));
+
+    calculaDias(idadeAnos, idadeMeses);
+
+    function calculaIdadeDeAnosParaDias(idadeEmAnos){
+        let idadeAnosEmDias = idadeEmAnos * 365;
+        alert("Idade Anos em dias: " + idadeAnosEmDias);
+    }
+
+    function calculaIdadeDeMesesParaDias(idadeEmMeses) {
+        let idadeMesesEmDias = idadeEmMeses * 30;
+        alert("Idade Meses em dias: " + idadeMesesEmDias);
+    }
+
+    function calculaDias(idadeEmAnos, idadeEmMeses) {
+        let idadeAnosEmDias = idadeEmAnos * 365;
+        let idadeMesesEmDias = idadeEmMeses * 30;
+
+        alert("Idade em dias: " + (idadeAnosEmDias + idadeMesesEmDias));
+    }
+   
+</script>

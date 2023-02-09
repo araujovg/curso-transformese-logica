@@ -1,0 +1,23 @@
+<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+
+<script>
+
+    /* 
+        Faça um algoritmo que leia quatro números informados 
+        pelo usuário e que depois imprima a média.
+
+    */
+
+    var notas = new Array(4);
+    var media = 0;
+    var soma = 0;
+
+    for(let i = 0; i < notas.length; i++){
+        soma += Number(prompt("Digite a " + (i+1) + "º nota:"));
+    }
+
+    media = soma / 4;
+
+    alert("Média: " + media.toFixed(2));
+
+</script>

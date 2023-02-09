@@ -1,0 +1,39 @@
+<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+
+<script>
+    /* 
+        Crie um programa que armazene 10 números digitados pelo 
+        usuário em dois vetores: um somente para números pares, 
+        e outro somente para números ímpares.
+        Após, exiba os valores dos dois vetores na tela, em sequência.
+
+    */
+
+    var vetorPares = [];
+    var vetorImpares = [];
+
+    for (let i = 0; i < 10; i++) {
+        let valor = Number(prompt("Digite um valor numérico"));
+        while(valor == 0){
+            alert("Você digitou um valor inválido! Por favor digite outro valor.");
+            valor = Number(prompt("Digite um valor numérico"));
+        }
+        if ((valor % 2) == 0) {
+            vetorPares.push(valor);
+        }
+        else vetorImpares.push(valor);
+    }
+
+    document.write("Vetor de pares: ");
+    for (let i = 0; i < vetorPares.length; i++) {
+        document.write(vetorPares[i] + " ");
+    }
+
+    document.write("<br>");
+
+    document.write("Vetor de Impares: ");
+    for (let i = 0; i < vetorImpares.length; i++) {
+        document.write(vetorImpares[i] + " ");
+    }
+
+</script>
